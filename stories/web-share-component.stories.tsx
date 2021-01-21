@@ -6,17 +6,24 @@ export default {
   title: "Welcome",
 };
 
-export const Default = () => (
-  <div>
-    <style children="*{font-family: sans-serif}" />
-    <RWebShare
-      data={{
-        text: "Like humans, flamingos make friends for life",
-        url: "https://on.natgeo.com/2zHaNup",
-        title: "Flamingos",
-      }}
-    >
-      <button>Share 🔗</button>
-    </RWebShare>
-  </div>
-);
+export const Default = () => {
+  const handleOnClick = (type) => {
+    console.log(type)
+  };
+
+  return (
+    <div>
+      <style children="*{font-family: sans-serif}" />
+      <RWebShare
+        data={{
+          text: "Like humans, flamingos make friends for life",
+          url: "https://on.natgeo.com/2zHaNup",
+          title: "Flamingos",
+        }}
+        closeText="X"
+      >
+        <button>Share 🔗</button>
+      </RWebShare>
+    </div>
+  );
+};

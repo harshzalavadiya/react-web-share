@@ -6,7 +6,7 @@ import Header from "./header";
 import Icon from "./icon";
 
 const IconsContainer = {
-  maxWidth: "24rem",
+  maxWidth: "22rem",
   width: "90%",
   backgroundColor: "white",
   borderRadius: "0.5rem",
@@ -23,12 +23,7 @@ const IconsLisStyle: CSSProperties = {
 
 export default function SocialIcons({ onClose, sites, data, closeText }: SocialIconsProps) {
   return (
-    <section
-      role="dialog"
-      aria-modal="true"
-      className="web-share-fade-in-up"
-      style={IconsContainer}
-    >
+    <section role="dialog" aria-modal="true" className="ws-fade-in-up" style={IconsContainer}>
       <Header title={data.title} />
       <div style={IconsLisStyle}>
         {sites.map((name) => (

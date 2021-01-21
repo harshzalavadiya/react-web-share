@@ -4,7 +4,7 @@ export default function useDisclosure(isOpenDefault = false) {
   const [isOpen, setIsOpen] = useState(isOpenDefault);
 
   const onOpen = useCallback(() => setIsOpen(true), []);
-  const onClose = useCallback(() => setIsOpen(false), []);
+  const onClose = useCallback(() => setTimeout(() => setIsOpen(false), 250), []);
   const onToggle = useCallback(() => setIsOpen((state) => !state), []);
 
   return { isOpen, onOpen, onClose, onToggle };

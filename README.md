@@ -60,10 +60,12 @@ export default Example;
 
 ## 👀 Props
 
-| Prop    | Description  | Type                 | Default                                       |
-| ------- | ------------ | -------------------- | --------------------------------------------- |
-| `data`  | Share Object | `{text, url, title}` | `{text: "", url: currentURL, title: "Share"}` |
-| `sites` | sites        | `string[]`           | all platforms (see list below for key list)   |
+| Prop        | Description             | Type                 | Default                                       |
+| ----------- | ----------------------- | -------------------- | --------------------------------------------- |
+| `data`      | Share Object            | `{text, url, title}` | `{text: "", url: currentURL, title: "Share"}` |
+| `closeText` | set custom close text   | `string`             | Close                                         |
+| `sites`     | sites                   | `string[]`           | all platforms (see list below for key list)   |
+| `onClick`   | event callback on click | `Function`           |                                               |
 
 ## 🌎 Sites
 
